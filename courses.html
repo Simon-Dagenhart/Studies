@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses – Seneta</title>
+<script>
+(function () {
+    var stored = localStorage.getItem('seneta-theme');
+    var theme = stored || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🌵 <span class="logo-name">Seneta</span></a>
+        <div class="header-right">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+                <ul id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+<section class="container">
+    <h1 class="section-title">Courses</h1>
+    <p class="section-intro">All courses are taught live, one-on-one or in small groups, over video call. Don't see quite what you need? <a href="contact.html">Get in touch</a> and we can tailor a plan.</p>
+
+    <div class="filter-tabs" id="filterTabs">
+        <button type="button" class="filter-tab active" data-category="all">All Courses</button>
+        <button type="button" class="filter-tab" data-category="english">English</button>
+        <button type="button" class="filter-tab" data-category="computer">Computer Skills</button>
+    </div>
+
+    <div class="course-grid" id="courseGrid">
+        <div class="course-card" data-category="english">
+            <div class="course-icon">🔤</div>
+            <h3>English Foundations</h3>
+            <p class="course-level">Beginner (A1–A2)</p>
+            <p class="course-desc">Build a solid base in grammar, vocabulary, and everyday phrases. Perfect if you're starting from scratch or want to shore up the fundamentals before moving on.</p>
+            <ul class="course-meta">
+                <li>🗓️ 8 weeks · 2 lessons/week</li>
+                <li>📍 Online, 1-on-1 or small group</li>
+            </ul>
+            <a href="contact.html?course=english-foundations" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+
+        <div class="course-card" data-category="english">
+            <div class="course-icon">💬</div>
+            <h3>Conversational English</h3>
+            <p class="course-level">Intermediate (B1–B2)</p>
+            <p class="course-desc">Focused speaking practice for real-life situations — small talk, storytelling, opinions, and thinking on your feet without translating in your head first.</p>
+            <ul class="course-meta">
+                <li>🗓️ Ongoing · flexible pace</li>
+                <li>📍 Online, 1-on-1 or small group</li>
+            </ul>
+            <a href="contact.html?course=conversational-english" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+
+        <div class="course-card" data-category="english">
+            <div class="course-icon">💼</div>
+            <h3>Business English</h3>
+            <p class="course-level">Intermediate–Advanced</p>
+            <p class="course-desc">Professional emails, meetings, presentations, and negotiation language for the workplace. Tailored to your industry and role.</p>
+            <ul class="course-meta">
+                <li>🗓️ 6 weeks</li>
+                <li>📍 Online, 1-on-1</li>
+            </ul>
+            <a href="contact.html?course=business-english" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+
+        <div class="course-card" data-category="computer">
+            <div class="course-icon">🖥️</div>
+            <h3>Computer Basics for Beginners</h3>
+            <p class="course-level">Beginner</p>
+            <p class="course-desc">Get comfortable with a computer from the ground up: navigating the desktop, files and folders, safe browsing, and everyday tasks.</p>
+            <ul class="course-meta">
+                <li>🗓️ 4 weeks</li>
+                <li>📍 Online, 1-on-1 or small group</li>
+            </ul>
+            <a href="contact.html?course=computer-basics" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+
+        <div class="course-card" data-category="computer">
+            <div class="course-icon">🗂️</div>
+            <h3>Software Essentials</h3>
+            <p class="course-level">Beginner–Intermediate</p>
+            <p class="course-desc">Word processing, spreadsheets, email, and video calls — the software skills used daily in almost any job or study program.</p>
+            <ul class="course-meta">
+                <li>🗓️ 6 weeks</li>
+                <li>📍 Online, 1-on-1</li>
+            </ul>
+            <a href="contact.html?course=software-essentials" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+
+        <div class="course-card" data-category="computer">
+            <div class="course-icon">🔧</div>
+            <h3>Hardware Basics &amp; Troubleshooting</h3>
+            <p class="course-level">Beginner</p>
+            <p class="course-desc">Understand what's actually inside a computer, what the common parts do, and how to troubleshoot everyday problems yourself before calling for help.</p>
+            <ul class="course-meta">
+                <li>🗓️ 4 weeks</li>
+                <li>📍 Online, 1-on-1</li>
+            </ul>
+            <a href="contact.html?course=hardware-basics" class="btn btn-outline">Enquire About This Course</a>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Seneta. English &amp; computer skills, taught online.</p>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/courses.js"></script>
+</body>
+</html>
