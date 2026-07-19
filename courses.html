@@ -11,6 +11,9 @@
     document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,13 +22,14 @@
         <a href="index.html" class="logo">🌵 <span class="logo-name">Up Is To Go</span></a>
         <div class="header-right">
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <nav class="main-nav">
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
                 <ul id="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html" class="active">Courses</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="courses.html" class="active" data-ar="الدورات">Courses</a></li>
+                    <li><a href="about.html" data-ar="نبذة عني">About</a></li>
+                    <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,93 +37,93 @@
 </header>
 <main>
 <section class="container">
-    <h1 class="section-title">Courses</h1>
-    <p class="section-intro">All courses are taught live, one-on-one or in small groups, over video call. Don't see quite what you need? <a href="contact.html">Get in touch</a> and we can tailor a plan.</p>
+    <h1 class="section-title" data-ar="الدورات">Courses</h1>
+    <p class="section-intro" data-ar-html="جميع الدورات تُدرَّس مباشرة، فرديًا أو في مجموعات صغيرة، عبر مكالمة فيديو. لا ترى ما تحتاجه بالضبط؟ &lt;a href=&#39;contact.html&#39;&gt;تواصل معي&lt;/a&gt; ويمكننا تصميم خطة مناسبة.">All courses are taught live, one-on-one or in small groups, over video call. Don't see quite what you need? <a href="contact.html">Get in touch</a> and we can tailor a plan.</p>
 
     <div class="filter-tabs" id="filterTabs">
-        <button type="button" class="filter-tab active" data-category="all">All Courses</button>
-        <button type="button" class="filter-tab" data-category="english">English</button>
-        <button type="button" class="filter-tab" data-category="computer">Computer Skills</button>
+        <button type="button" class="filter-tab active" data-category="all" data-ar="جميع الدورات">All Courses</button>
+        <button type="button" class="filter-tab" data-category="english" data-ar="اللغة الإنجليزية">English</button>
+        <button type="button" class="filter-tab" data-category="computer" data-ar="مهارات الحاسوب">Computer Skills</button>
     </div>
 
     <div class="course-grid" id="courseGrid">
         <div class="course-card" data-category="english">
             <div class="course-icon">🔤</div>
-            <h3>English Foundations</h3>
-            <p class="course-level">Beginner (A1–A2)</p>
-            <p class="course-desc">Build a solid base in grammar, vocabulary, and everyday phrases. Perfect if you're starting from scratch or want to shore up the fundamentals before moving on.</p>
+            <h3 data-ar="أساسيات اللغة الإنجليزية">English Foundations</h3>
+            <p class="course-level" data-ar="مبتدئ (A1–A2)">Beginner (A1–A2)</p>
+            <p class="course-desc" data-ar="بناء أساس متين في القواعد والمفردات والعبارات اليومية. مثالية إن كنت تبدأ من الصفر أو تريد تثبيت الأساسيات قبل المتابعة.">Build a solid base in grammar, vocabulary, and everyday phrases. Perfect if you're starting from scratch or want to shore up the fundamentals before moving on.</p>
             <ul class="course-meta">
-                <li>🗓️ 8 weeks · 2 lessons/week</li>
-                <li>📍 Online, 1-on-1 or small group</li>
+                <li data-ar="🗓️ 8 أسابيع · درسان أسبوعيًا">🗓️ 8 weeks · 2 lessons/week</li>
+                <li data-ar="📍 عبر الإنترنت، فردي أو مجموعة صغيرة">📍 Online, 1-on-1 or small group</li>
             </ul>
-            <a href="contact.html?course=english-foundations" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=english-foundations" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
 
         <div class="course-card" data-category="english">
             <div class="course-icon">💬</div>
-            <h3>Conversational English</h3>
-            <p class="course-level">Intermediate (B1–B2)</p>
-            <p class="course-desc">Focused speaking practice for real-life situations — small talk, storytelling, opinions, and thinking on your feet without translating in your head first.</p>
+            <h3 data-ar="المحادثة بالإنجليزية">Conversational English</h3>
+            <p class="course-level" data-ar="متوسط (B1–B2)">Intermediate (B1–B2)</p>
+            <p class="course-desc" data-ar="تمرين تحدث مركّز لمواقف الحياة الواقعية — الحديث العابر، السرد، إبداء الرأي، والتفكير السريع دون الترجمة الذهنية أولًا.">Focused speaking practice for real-life situations — small talk, storytelling, opinions, and thinking on your feet without translating in your head first.</p>
             <ul class="course-meta">
-                <li>🗓️ Ongoing · flexible pace</li>
-                <li>📍 Online, 1-on-1 or small group</li>
+                <li data-ar="🗓️ مستمرة · وتيرة مرنة">🗓️ Ongoing · flexible pace</li>
+                <li data-ar="📍 عبر الإنترنت، فردي أو مجموعة صغيرة">📍 Online, 1-on-1 or small group</li>
             </ul>
-            <a href="contact.html?course=conversational-english" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=conversational-english" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
 
         <div class="course-card" data-category="english">
             <div class="course-icon">💼</div>
-            <h3>Business English</h3>
-            <p class="course-level">Intermediate–Advanced</p>
-            <p class="course-desc">Professional emails, meetings, presentations, and negotiation language for the workplace. Tailored to your industry and role.</p>
+            <h3 data-ar="الإنجليزية التجارية">Business English</h3>
+            <p class="course-level" data-ar="متوسط–متقدم">Intermediate–Advanced</p>
+            <p class="course-desc" data-ar="رسائل بريد إلكتروني احترافية، اجتماعات، عروض تقديمية، ولغة التفاوض في مكان العمل. مصمّمة حسب مجالك ودورك الوظيفي.">Professional emails, meetings, presentations, and negotiation language for the workplace. Tailored to your industry and role.</p>
             <ul class="course-meta">
-                <li>🗓️ 6 weeks</li>
-                <li>📍 Online, 1-on-1</li>
+                <li data-ar="🗓️ 6 أسابيع">🗓️ 6 weeks</li>
+                <li data-ar="📍 عبر الإنترنت، فردي">📍 Online, 1-on-1</li>
             </ul>
-            <a href="contact.html?course=business-english" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=business-english" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
 
         <div class="course-card" data-category="computer">
             <div class="course-icon">🖥️</div>
-            <h3>Computer Basics for Beginners</h3>
-            <p class="course-level">Beginner</p>
-            <p class="course-desc">Get comfortable with a computer from the ground up: navigating the desktop, files and folders, safe browsing, and everyday tasks.</p>
+            <h3 data-ar="أساسيات الحاسوب للمبتدئين">Computer Basics for Beginners</h3>
+            <p class="course-level" data-ar="مبتدئ">Beginner</p>
+            <p class="course-desc" data-ar="تعرّف على الحاسوب من الصفر: التنقّل في سطح المكتب، الملفات والمجلدات، التصفح الآمن، والمهام اليومية.">Get comfortable with a computer from the ground up: navigating the desktop, files and folders, safe browsing, and everyday tasks.</p>
             <ul class="course-meta">
-                <li>🗓️ 4 weeks</li>
-                <li>📍 Online, 1-on-1 or small group</li>
+                <li data-ar="🗓️ 4 أسابيع">🗓️ 4 weeks</li>
+                <li data-ar="📍 عبر الإنترنت، فردي أو مجموعة صغيرة">📍 Online, 1-on-1 or small group</li>
             </ul>
-            <a href="contact.html?course=computer-basics" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=computer-basics" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
 
         <div class="course-card" data-category="computer">
             <div class="course-icon">🗂️</div>
-            <h3>Software Essentials</h3>
-            <p class="course-level">Beginner–Intermediate</p>
-            <p class="course-desc">Word processing, spreadsheets, email, and video calls — the software skills used daily in almost any job or study program.</p>
+            <h3 data-ar="أساسيات البرامج المكتبية">Software Essentials</h3>
+            <p class="course-level" data-ar="مبتدئ–متوسط">Beginner–Intermediate</p>
+            <p class="course-desc" data-ar="معالجة النصوص، جداول البيانات، البريد الإلكتروني، ومكالمات الفيديو — مهارات البرامج المستخدمة يوميًا في أغلب الوظائف وبرامج الدراسة.">Word processing, spreadsheets, email, and video calls — the software skills used daily in almost any job or study program.</p>
             <ul class="course-meta">
-                <li>🗓️ 6 weeks</li>
-                <li>📍 Online, 1-on-1</li>
+                <li data-ar="🗓️ 6 أسابيع">🗓️ 6 weeks</li>
+                <li data-ar="📍 عبر الإنترنت، فردي">📍 Online, 1-on-1</li>
             </ul>
-            <a href="contact.html?course=software-essentials" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=software-essentials" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
 
         <div class="course-card" data-category="computer">
             <div class="course-icon">🔧</div>
-            <h3>Hardware Basics &amp; Troubleshooting</h3>
-            <p class="course-level">Beginner</p>
-            <p class="course-desc">Understand what's actually inside a computer, what the common parts do, and how to troubleshoot everyday problems yourself before calling for help.</p>
+            <h3 data-ar="أساسيات العتاد وإصلاح الأعطال">Hardware Basics &amp; Troubleshooting</h3>
+            <p class="course-level" data-ar="مبتدئ">Beginner</p>
+            <p class="course-desc" data-ar="افهم ما بداخل الحاسوب فعلًا، وما تقوم به المكوّنات الشائعة، وكيفية إصلاح المشاكل اليومية بنفسك قبل طلب المساعدة.">Understand what's actually inside a computer, what the common parts do, and how to troubleshoot everyday problems yourself before calling for help.</p>
             <ul class="course-meta">
-                <li>🗓️ 4 weeks</li>
-                <li>📍 Online, 1-on-1</li>
+                <li data-ar="🗓️ 4 أسابيع">🗓️ 4 weeks</li>
+                <li data-ar="📍 عبر الإنترنت، فردي">📍 Online, 1-on-1</li>
             </ul>
-            <a href="contact.html?course=hardware-basics" class="btn btn-outline">Enquire About This Course</a>
+            <a href="contact.html?course=hardware-basics" class="btn btn-outline" data-ar="الاستفسار عن هذه الدورة">Enquire About This Course</a>
         </div>
     </div>
 </section>
 </main>
 <footer class="site-footer">
     <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Up Is To Go. English &amp; computer skills, taught online.</p>
+        <p>&copy; <span id="year"></span> Up Is To Go. <span data-ar="اللغة الإنجليزية ومهارات الحاسوب، تُدرَّس عبر الإنترنت.">English &amp; computer skills, taught online.</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

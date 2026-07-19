@@ -99,6 +99,23 @@ a:hover { text-decoration: underline; }
 }
 .theme-toggle:hover { background: rgba(255,255,255,0.22); }
 
+.lang-toggle {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    padding: 0 0.9rem;
+    height: 38px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.lang-toggle:hover { background: rgba(255,255,255,0.22); }
+
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -412,4 +429,22 @@ a:hover { text-decoration: underline; }
     .main-nav ul.open { display: flex; }
     .header-inner { position: relative; }
     .hero h1 { font-size: 1.8rem; }
+}
+
+/* ==========================================================================
+   Arabic / RTL
+   ------------------------------------------------------------------------
+   Toggled by setting dir="rtl" lang="ar" on <html> (see main.js). Flex row
+   layouts flip direction on their own once dir="rtl" is set — only the
+   list indent below needs manual mirroring. Tajawal takes over for Arabic
+   since the site's default font has no Arabic glyphs.
+   ========================================================================== */
+
+[dir="rtl"] body {
+    font-family: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+}
+
+[dir="rtl"] .about-list {
+    padding-left: 0;
+    padding-right: 1.2rem;
 }

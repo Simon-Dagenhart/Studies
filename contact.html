@@ -11,6 +11,9 @@
     document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,13 +22,14 @@
         <a href="index.html" class="logo">🌵 <span class="logo-name">Up Is To Go</span></a>
         <div class="header-right">
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <nav class="main-nav">
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
                 <ul id="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="courses.html" data-ar="الدورات">Courses</a></li>
+                    <li><a href="about.html" data-ar="نبذة عني">About</a></li>
+                    <li><a href="contact.html" class="active" data-ar="تواصل">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,51 +37,51 @@
 </header>
 <main>
 <section class="container narrow">
-    <h1 class="section-title">Get in Touch</h1>
-    <p>Questions about a course, ready to book a free trial lesson, or need a website for your business? Send a message and I'll get back to you.</p>
+    <h1 class="section-title" data-ar="تواصل معي">Get in Touch</h1>
+    <p data-ar="لديك أسئلة حول دورة، مستعد لحجز درس تجريبي مجاني، أو تحتاج موقعًا لعملك؟ أرسل رسالة وسأعاود التواصل معك.">Questions about a course, ready to book a free trial lesson, or need a website for your business? Send a message and I'll get back to you.</p>
 
     <div class="contact-info">
-        <p>Phone: <a href="tel:+9647819767081">+964 781 9767 081</a></p>
-        <p>Email: <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a></p>
-        <p><a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a></p>
+        <p><span data-ar="الهاتف:">Phone:</span> <a href="tel:+9647819767081">+964 781 9767 081</a></p>
+        <p><span data-ar="البريد الإلكتروني:">Email:</span> <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a></p>
+        <p><a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a></p>
     </div>
 
     <p class="alert alert-success" id="successAlert" hidden></p>
     <ul class="alert alert-error" id="errorAlert" hidden></ul>
 
     <form class="contact-form" id="contactForm" novalidate>
-        <label for="name">Name</label>
+        <label for="name" data-ar="الاسم">Name</label>
         <input type="text" id="name" name="name">
 
-        <label for="email">Email</label>
+        <label for="email" data-ar="البريد الإلكتروني">Email</label>
         <input type="email" id="email" name="email">
 
-        <label for="course">I'm Interested In</label>
+        <label for="course" data-ar="أنا مهتم بـ">I'm Interested In</label>
         <select id="course" name="course">
-            <option value="">Not sure yet</option>
-            <optgroup label="Courses">
-                <option value="english-foundations">English Foundations</option>
-                <option value="conversational-english">Conversational English</option>
-                <option value="business-english">Business English</option>
-                <option value="computer-basics">Computer Basics for Beginners</option>
-                <option value="software-essentials">Software Essentials</option>
-                <option value="hardware-basics">Hardware Basics &amp; Troubleshooting</option>
+            <option value="" data-ar="لست متأكدًا بعد">Not sure yet</option>
+            <optgroup label="Courses" data-ar-label="الدورات">
+                <option value="english-foundations" data-ar="أساسيات اللغة الإنجليزية">English Foundations</option>
+                <option value="conversational-english" data-ar="المحادثة بالإنجليزية">Conversational English</option>
+                <option value="business-english" data-ar="الإنجليزية التجارية">Business English</option>
+                <option value="computer-basics" data-ar="أساسيات الحاسوب للمبتدئين">Computer Basics for Beginners</option>
+                <option value="software-essentials" data-ar="أساسيات البرامج المكتبية">Software Essentials</option>
+                <option value="hardware-basics" data-ar="أساسيات العتاد وإصلاح الأعطال">Hardware Basics &amp; Troubleshooting</option>
             </optgroup>
-            <optgroup label="Other Services">
-                <option value="website-development">Website Development for My Business</option>
+            <optgroup label="Other Services" data-ar-label="خدمات أخرى">
+                <option value="website-development" data-ar="تطوير موقع لعملي">Website Development for My Business</option>
             </optgroup>
         </select>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your goals and your preferred schedule..."></textarea>
+        <label for="message" data-ar="الرسالة">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your goals and your preferred schedule..." data-ar-placeholder="أخبرني قليلًا عن أهدافك والجدول الذي يناسبك..."></textarea>
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary" data-ar="إرسال الرسالة">Send Message</button>
     </form>
 </section>
 </main>
 <footer class="site-footer">
     <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Up Is To Go. English &amp; computer skills, taught online.</p>
+        <p>&copy; <span id="year"></span> Up Is To Go. <span data-ar="اللغة الإنجليزية ومهارات الحاسوب، تُدرَّس عبر الإنترنت.">English &amp; computer skills, taught online.</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

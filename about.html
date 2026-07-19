@@ -11,6 +11,9 @@
     document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,13 +22,14 @@
         <a href="index.html" class="logo">🌵 <span class="logo-name">Up Is To Go</span></a>
         <div class="header-right">
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <nav class="main-nav">
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
                 <ul id="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="courses.html" data-ar="الدورات">Courses</a></li>
+                    <li><a href="about.html" class="active" data-ar="نبذة عني">About</a></li>
+                    <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,37 +37,37 @@
 </header>
 <main>
 <section class="container narrow">
-    <h1 class="section-title">About Me</h1>
+    <h1 class="section-title" data-ar="نبذة عني">About Me</h1>
     <div class="about-content">
-        <p>Hi, I'm Mr. Hamzah — a computer engineer as well as an English trainer and teacher, and I started Up Is To Go to bring both of those skill sets into one place, taught the way I wish more lessons were taught: patient, practical, and built around what <em>you</em> actually want to be able to do.</p>
+        <p data-ar="مرحبًا، أنا الأستاذ حمزة — مهندس حاسوب ومدرّب/معلّم لغة إنجليزية، وقد أسّست Up Is To Go لأجمع هاتين المهارتين في مكان واحد، بأسلوب تدريس أتمنى لو كانت به دروس أكثر: صبور، عملي، ومبني حول ما تريد أنت فعلًا القدرة على فعله.">Hi, I'm Mr. Hamzah — a computer engineer as well as an English trainer and teacher, and I started Up Is To Go to bring both of those skill sets into one place, taught the way I wish more lessons were taught: patient, practical, and built around what <em>you</em> actually want to be able to do.</p>
 
-        <p>I teach at Al-Sindbad School and Cambridge Institution, alongside running Up Is To Go for students who want live, one-on-one lessons outside the classroom.</p>
+        <p data-ar="أُدرّس في مدرسة السندباد ومعهد كامبردج، إلى جانب إدارتي لـ Up Is To Go للطلاب الراغبين بدروس مباشرة فردية خارج الصف الدراسي.">I teach at Al-Sindbad School and Cambridge Institution, alongside running Up Is To Go for students who want live, one-on-one lessons outside the classroom.</p>
 
-        <p>I believe the best lessons don't feel like lessons — they feel like steady, honest progress toward a goal that matters to you, whether that's holding a conversation with confidence or finally feeling at ease sitting down at a computer.</p>
+        <p data-ar="أعتقد أن أفضل الدروس لا تشعرك بأنها دروس — بل تشعرك بتقدّم ثابت وصادق نحو هدف يهمّك، سواء كان ذلك التحدث بثقة أو الشعور أخيرًا بالارتياح أمام الحاسوب.">I believe the best lessons don't feel like lessons — they feel like steady, honest progress toward a goal that matters to you, whether that's holding a conversation with confidence or finally feeling at ease sitting down at a computer.</p>
 
-        <p>Alongside teaching, I also design and build websites for businesses — so if you run a business and need an online presence, that's something I can help with directly.</p>
+        <p data-ar="إلى جانب التدريس، أصمم وأطوّر أيضًا مواقع ويب للشركات — لذا إن كنت تدير عملًا تجاريًا وتحتاج إلى حضور على الإنترنت، فهذا شيء يمكنني مساعدتك فيه مباشرة.">Alongside teaching, I also design and build websites for businesses — so if you run a business and need an online presence, that's something I can help with directly.</p>
 
-        <h2>My Approach</h2>
+        <h2 data-ar="أسلوبي">My Approach</h2>
         <ul class="about-list">
-            <li>Every course starts with a conversation about your goals, not a fixed syllabus.</li>
-            <li>Lessons are live and interactive — plenty of room for questions, mistakes, and real practice.</li>
-            <li>No jargon without explanation, whether we're discussing grammar or gigabytes.</li>
-            <li>Progress is paced to you, not a rigid schedule.</li>
+            <li data-ar="كل دورة تبدأ بحوار حول أهدافك، لا بمنهج ثابت.">Every course starts with a conversation about your goals, not a fixed syllabus.</li>
+            <li data-ar="الدروس مباشرة وتفاعلية — مع مساحة كافية للأسئلة والأخطاء والتمرين الحقيقي.">Lessons are live and interactive — plenty of room for questions, mistakes, and real practice.</li>
+            <li data-ar="لا مصطلحات دون شرح، سواء كنا نناقش قواعد اللغة أو الغيغابايت.">No jargon without explanation, whether we're discussing grammar or gigabytes.</li>
+            <li data-ar="التقدّم يتم بالوتيرة التي تناسبك، لا وفق جدول صارم.">Progress is paced to you, not a rigid schedule.</li>
         </ul>
 
-        <h2>What I Teach</h2>
-        <p>On the English side: conversation, grammar foundations, and business English. On the computer side: everyday computer basics, common software (documents, spreadsheets, email, video calls), and hardware fundamentals — what's actually inside your machine and how to troubleshoot the everyday stuff yourself.</p>
+        <h2 data-ar="ماذا أُدرّس">What I Teach</h2>
+        <p data-ar="في جانب اللغة الإنجليزية: المحادثة، وأساسيات القواعد، والإنجليزية التجارية. في جانب الحاسوب: أساسيات الحاسوب اليومية، والبرامج الشائعة (المستندات، جداول البيانات، البريد الإلكتروني، مكالمات الفيديو)، وأساسيات العتاد — ما بداخل جهازك فعلًا وكيفية إصلاح المشاكل اليومية بنفسك.">On the English side: conversation, grammar foundations, and business English. On the computer side: everyday computer basics, common software (documents, spreadsheets, email, video calls), and hardware fundamentals — what's actually inside your machine and how to troubleshoot the everyday stuff yourself.</p>
 
-        <h2>Website Development for Businesses</h2>
-        <p>Outside of teaching, I design and build websites for small and growing businesses — whether that's a straightforward online presence or something more tailored to how your business works. <a href="contact.html?course=website-development">Get in touch</a> if you'd like to talk through what you need.</p>
+        <h2 data-ar="تطوير المواقع للشركات">Website Development for Businesses</h2>
+        <p data-ar-html="إلى جانب التدريس، أصمم وأطوّر مواقع ويب للشركات الصغيرة والناشئة — سواء كان ذلك حضورًا بسيطًا على الإنترنت أو شيئًا أكثر ملاءمة لطريقة عمل شركتك. &lt;a href=&#39;contact.html?course=website-development&#39;&gt;تواصل معي&lt;/a&gt; إذا كنت ترغب بمناقشة ما تحتاجه.">Outside of teaching, I design and build websites for small and growing businesses — whether that's a straightforward online presence or something more tailored to how your business works. <a href="contact.html?course=website-development">Get in touch</a> if you'd like to talk through what you need.</p>
 
-        <p><a href="contact.html" class="btn btn-primary">Book a Free Trial Lesson</a></p>
+        <p><a href="contact.html" class="btn btn-primary" data-ar="احجز درسًا تجريبيًا مجانيًا">Book a Free Trial Lesson</a></p>
     </div>
 </section>
 </main>
 <footer class="site-footer">
     <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Up Is To Go. English &amp; computer skills, taught online.</p>
+        <p>&copy; <span id="year"></span> Up Is To Go. <span data-ar="اللغة الإنجليزية ومهارات الحاسوب، تُدرَّس عبر الإنترنت.">English &amp; computer skills, taught online.</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

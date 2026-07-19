@@ -11,6 +11,9 @@
     document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,13 +22,14 @@
         <a href="index.html" class="logo">🌵 <span class="logo-name">Up Is To Go</span></a>
         <div class="header-right">
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <nav class="main-nav">
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
                 <ul id="navList">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="active" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="courses.html" data-ar="الدورات">Courses</a></li>
+                    <li><a href="about.html" data-ar="نبذة عني">About</a></li>
+                    <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,67 +38,67 @@
 <main>
 <section class="hero">
     <div class="container hero-inner">
-        <h1>Learn English &amp; Computer Skills — Online, at Your Pace</h1>
-        <p class="hero-sub">I'm Mr. Hamzah, a computer engineer and English trainer/teacher at Al-Sindbad School and Cambridge Institution, offering live online lessons in English and everyday computer skills — from your first conversation to troubleshooting your own PC. I also build websites for businesses.</p>
+        <h1 data-ar="تعلّم الإنجليزية ومهارات الحاسوب — عبر الإنترنت، وبالسرعة التي تناسبك">Learn English &amp; Computer Skills — Online, at Your Pace</h1>
+        <p class="hero-sub" data-ar="أنا الأستاذ حمزة، مهندس حاسوب ومدرّب/معلّم لغة إنجليزية في مدرسة السندباد ومعهد كامبردج، أقدّم دروسًا مباشرة عبر الإنترنت في اللغة الإنجليزية ومهارات الحاسوب اليومية — من أول محادثة إلى إصلاح جهازك بنفسك. كما أصمم مواقع ويب للشركات.">I'm Mr. Hamzah, a computer engineer and English trainer/teacher at Al-Sindbad School and Cambridge Institution, offering live online lessons in English and everyday computer skills — from your first conversation to troubleshooting your own PC. I also build websites for businesses.</p>
         <div class="hero-actions">
-            <a href="courses.html" class="btn btn-primary">View Courses</a>
-            <a href="contact.html" class="btn btn-outline">Book a Free Trial Lesson</a>
+            <a href="courses.html" class="btn btn-primary" data-ar="عرض الدورات">View Courses</a>
+            <a href="contact.html" class="btn btn-outline" data-ar="احجز درسًا تجريبيًا مجانيًا">Book a Free Trial Lesson</a>
         </div>
     </div>
 </section>
 
 <section class="container">
-    <h2 class="section-title">What I Teach</h2>
+    <h2 class="section-title" data-ar="ماذا أُدرّس">What I Teach</h2>
     <div class="topic-grid">
         <div class="topic-card">
             <div class="topic-icon">🔤</div>
-            <h3>English Language</h3>
-            <p>From first words to fluent conversation and business English — lessons tailored to your goals and level.</p>
+            <h3 data-ar="اللغة الإنجليزية">English Language</h3>
+            <p data-ar="من أولى الكلمات إلى المحادثة الطليقة والإنجليزية التجارية — دروس مصمّمة حسب أهدافك ومستواك.">From first words to fluent conversation and business English — lessons tailored to your goals and level.</p>
         </div>
         <div class="topic-card">
             <div class="topic-icon">🖥️</div>
-            <h3>Computer Basics</h3>
-            <p>Comfortable, judgment-free lessons on using a computer, everyday software, and understanding the hardware inside — great for absolute beginners.</p>
+            <h3 data-ar="أساسيات الحاسوب">Computer Basics</h3>
+            <p data-ar="دروس مريحة وخالية من الأحكام حول استخدام الحاسوب، والبرامج اليومية، وفهم المكوّنات الداخلية — مثالية للمبتدئين تمامًا.">Comfortable, judgment-free lessons on using a computer, everyday software, and understanding the hardware inside — great for absolute beginners.</p>
         </div>
         <div class="topic-card">
             <div class="topic-icon">🌐</div>
-            <h3>Websites for Businesses</h3>
-            <p>As a computer engineer, I also design and build websites for small businesses — from a simple online presence to something more custom.</p>
+            <h3 data-ar="مواقع ويب للشركات">Websites for Businesses</h3>
+            <p data-ar="بصفتي مهندس حاسوب، أصمم وأطوّر أيضًا مواقع ويب للشركات الصغيرة — من حضور بسيط على الإنترنت إلى شيء أكثر تخصيصًا.">As a computer engineer, I also design and build websites for small businesses — from a simple online presence to something more custom.</p>
         </div>
     </div>
 </section>
 
 <section class="container why-section">
-    <h2 class="section-title">Why Learn With Me</h2>
+    <h2 class="section-title" data-ar="لماذا تتعلّم معي">Why Learn With Me</h2>
     <div class="why-grid">
         <div class="why-item">
-            <h3>👩‍🏫 Real Teaching Experience</h3>
-            <p>Lessons built on real classroom experience, not a generic script — adapted to how you actually learn.</p>
+            <h3 data-ar="👩‍🏫 خبرة تدريس حقيقية">👩‍🏫 Real Teaching Experience</h3>
+            <p data-ar="دروس مبنية على خبرة تدريس حقيقية، وليست نصًا عامًا — تتكيّف مع طريقة تعلّمك الفعلية.">Lessons built on real classroom experience, not a generic script — adapted to how you actually learn.</p>
         </div>
         <div class="why-item">
-            <h3>🎯 Goals-First Approach</h3>
-            <p>Whether it's feeling confident at work, finally understanding your laptop, or getting your business online — we start from your goal.</p>
+            <h3 data-ar="🎯 نهج يركّز على أهدافك">🎯 Goals-First Approach</h3>
+            <p data-ar="سواء كان الأمر يتعلق بالشعور بالثقة في العمل، أو فهم حاسوبك المحمول أخيرًا، أو نقل عملك إلى الإنترنت — نبدأ من هدفك.">Whether it's feeling confident at work, finally understanding your laptop, or getting your business online — we start from your goal.</p>
         </div>
         <div class="why-item">
-            <h3>💻 100% Online</h3>
-            <p>All lessons happen over video call, so you can learn from anywhere, on a schedule that fits your life.</p>
+            <h3 data-ar="💻 عبر الإنترنت بالكامل">💻 100% Online</h3>
+            <p data-ar="تُعقد جميع الدروس عبر مكالمة فيديو، لذا يمكنك التعلّم من أي مكان، وفق جدول يناسب حياتك.">All lessons happen over video call, so you can learn from anywhere, on a schedule that fits your life.</p>
         </div>
         <div class="why-item">
-            <h3>🛠️ Engineer's Perspective</h3>
-            <p>A computer engineering background means computer lessons come with real technical depth — and websites are built to be fast, solid, and maintainable.</p>
+            <h3 data-ar="🛠️ منظور هندسي">🛠️ Engineer's Perspective</h3>
+            <p data-ar="خلفيتي في هندسة الحاسوب تعني أن دروس الحاسوب تأتي بعمق تقني حقيقي — والمواقع التي أبنيها سريعة ومتينة وسهلة الصيانة.">A computer engineering background means computer lessons come with real technical depth — and websites are built to be fast, solid, and maintainable.</p>
         </div>
     </div>
 </section>
 
 <section class="container cta-section">
-    <h2>Ready to get started?</h2>
-    <p>Book a free trial lesson — no pressure, just a chance to meet and figure out the right course for you.</p>
-    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <h2 data-ar="مستعد للبدء؟">Ready to get started?</h2>
+    <p data-ar="احجز درسًا تجريبيًا مجانيًا — دون أي ضغط، مجرد فرصة للتعارف وتحديد الدورة المناسبة لك.">Book a free trial lesson — no pressure, just a chance to meet and figure out the right course for you.</p>
+    <a href="contact.html" class="btn btn-primary" data-ar="تواصل معي">Get in Touch</a>
 </section>
 </main>
 <footer class="site-footer">
     <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Up Is To Go. English &amp; computer skills, taught online.</p>
+        <p>&copy; <span id="year"></span> Up Is To Go. <span data-ar="اللغة الإنجليزية ومهارات الحاسوب، تُدرَّس عبر الإنترنت.">English &amp; computer skills, taught online.</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>
