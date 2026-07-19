@@ -1,8 +1,8 @@
-# Seneta
+# Up Is To Go
 
 English and computer skills, taught online — plus website development for businesses.
 
-Seneta is a small business/teaching site built with plain HTML, CSS, and vanilla
+Up Is To Go is a small business/teaching site built with plain HTML, CSS, and vanilla
 JavaScript. No framework, no build step, no backend — it's fully static, so it works
 on any static host (GitHub Pages, Netlify, S3, or just opening the files directly).
 

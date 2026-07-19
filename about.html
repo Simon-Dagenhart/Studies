@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – Up Is To Go</title>
+<script>
+(function () {
+    var stored = localStorage.getItem('upistogo-theme');
+    var theme = stored || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🌵 <span class="logo-name">Up Is To Go</span></a>
+        <div class="header-right">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+            <nav class="main-nav">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+                <ul id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+<section class="container narrow">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content">
+        <p>Hi, I'm Mr. Hamzah — a computer engineer as well as an English trainer and teacher, and I started Up Is To Go to bring both of those skill sets into one place, taught the way I wish more lessons were taught: patient, practical, and built around what <em>you</em> actually want to be able to do.</p>
+
+        <p>I teach at Al-Sindbad School and Cambridge Institution, alongside running Up Is To Go for students who want live, one-on-one lessons outside the classroom.</p>
+
+        <p>I believe the best lessons don't feel like lessons — they feel like steady, honest progress toward a goal that matters to you, whether that's holding a conversation with confidence or finally feeling at ease sitting down at a computer.</p>
+
+        <p>Alongside teaching, I also design and build websites for businesses — so if you run a business and need an online presence, that's something I can help with directly.</p>
+
+        <h2>My Approach</h2>
+        <ul class="about-list">
+            <li>Every course starts with a conversation about your goals, not a fixed syllabus.</li>
+            <li>Lessons are live and interactive — plenty of room for questions, mistakes, and real practice.</li>
+            <li>No jargon without explanation, whether we're discussing grammar or gigabytes.</li>
+            <li>Progress is paced to you, not a rigid schedule.</li>
+        </ul>
+
+        <h2>What I Teach</h2>
+        <p>On the English side: conversation, grammar foundations, and business English. On the computer side: everyday computer basics, common software (documents, spreadsheets, email, video calls), and hardware fundamentals — what's actually inside your machine and how to troubleshoot the everyday stuff yourself.</p>
+
+        <h2>Website Development for Businesses</h2>
+        <p>Outside of teaching, I design and build websites for small and growing businesses — whether that's a straightforward online presence or something more tailored to how your business works. <a href="contact.html?course=website-development">Get in touch</a> if you'd like to talk through what you need.</p>
+
+        <p><a href="contact.html" class="btn btn-primary">Book a Free Trial Lesson</a></p>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Up Is To Go. English &amp; computer skills, taught online.</p>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
