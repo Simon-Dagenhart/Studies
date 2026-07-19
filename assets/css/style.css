@@ -224,6 +224,16 @@ a:hover { text-decoration: underline; }
 .topic-card h3 { color: var(--heading); margin: 0 0 0.5rem; }
 .topic-card p { color: var(--text-dim); margin: 0; }
 
+.contact-info {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0 2rem;
+}
+.contact-info a { color: var(--sage-dark); }
+.contact-info p { margin: 0.3rem 0; }
+
 /* Why section */
 .why-section { margin-top: 2rem; }
 
